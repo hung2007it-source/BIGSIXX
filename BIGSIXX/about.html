@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Về chúng tôi - BIGSIXX Logistics</title>
+<meta name="description" content="Lịch sử hình thành, sứ mệnh, tầm nhìn và cơ cấu cổ đông của Công ty Cổ phần Logistics BIGSIXX.">
+<link rel="stylesheet" href="shared.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+.about-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.office-photo { border-radius: 20px; overflow: hidden; border: 1px solid var(--glass-border); }
+.office-photo img { width: 100%; height: 380px; object-fit: cover; }
+.mv-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+.mv-card { padding: 2rem; text-align: center; }
+.mv-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 1rem; }
+.mv-card h3 { font-size: 1.1rem; margin-bottom: 0.8rem; }
+.mv-card p { color: var(--text-muted); font-size: 0.9rem; }
+.revenue-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; }
+.revenue-card { padding: 2rem; text-align: center; }
+.revenue-card h3 { font-size: 2rem; font-weight: 900; background: linear-gradient(135deg,var(--primary),var(--secondary)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.revenue-card p { color: var(--text-muted); font-size: 0.9rem; margin-top:0.5rem; }
+.timeline { position: relative; padding: 2rem 0; }
+.timeline::before { content:''; position:absolute; left:50%; top:0; bottom:0; width:2px; background:var(--glass-border); }
+.tl-item { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 2rem; margin-bottom: 3rem; align-items: center; }
+.tl-dot { width: 20px; height: 20px; background: var(--primary); border-radius: 50%; margin: 0 auto; border: 4px solid var(--bg-dark); box-shadow: 0 0 12px rgba(0,229,255,0.5); z-index: 1; }
+.tl-content { padding: 1.5rem; }
+.tl-content.right { text-align: left; }
+.tl-content.left { text-align: right; }
+.tl-year { color: var(--primary); font-size: 1.4rem; font-weight: 800; margin-bottom: 0.5rem; }
+.tl-content h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.tl-content p { color: var(--text-muted); font-size: 0.9rem; }
+.shareholder-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+.sh-card { padding: 2.5rem; text-align: center; }
+.sh-card i { font-size: 3rem; color: var(--secondary); margin-bottom: 1rem; }
+.sh-pct { font-size: 2.5rem; font-weight: 900; color: var(--primary); }
+.sh-card h4 { margin: 0.5rem 0; }
+.sh-card p { color: var(--text-muted); font-size: 0.9rem; }
+.award-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; }
+.award-card { padding: 1.5rem; text-align: center; }
+.award-card i { font-size: 2rem; color: #f6c90e; margin-bottom: 0.8rem; }
+.award-card h4 { font-size: 0.95rem; }
+.award-card p { color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem; }
+@media(max-width:992px) { .about-intro{grid-template-columns:1fr;} .mv-grid,.revenue-grid,.award-grid{grid-template-columns:repeat(2,1fr);} .shareholder-grid{grid-template-columns:1fr 1fr;} .timeline::before{left:20px;} .tl-item{grid-template-columns:40px 1fr;} .tl-content.left{text-align:left;order:2;} .tl-dot{order:1;} }
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.svg" alt="BIGSIXX Logo" class="logo-img">
+            <div class="logo-text">
+                <div class="logo-name">BIGSIX<span>X</span></div>
+                <div class="logo-sub">Global Logistics Solutions</div>
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html" class="active">Về chúng tôi</a></li>
+            <li class="nav-dropdown"><a href="services.html">Dịch vụ ▾</a>
+                <div class="dropdown-menu">
+                    <a href="service-sea.html"><i class='bx bx-ship'></i> Vận tải Đường biển</a>
+                    <a href="service-air.html"><i class='bx bx-plane-alt'></i> Vận tải Hàng không</a>
+                    <a href="service-road.html"><i class='bx bx-truck'></i> Vận tải Đường bộ</a>
+                </div>
+            </li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="team.html">Đội ngũ</a></li>
+            <li><a href="careers.html">Tuyển dụng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="nav-lang"><span class="active">VN</span> | <span class="muted">EN</span></div>
+            <a href="contact.html" class="btn btn-primary btn-sm">Báo giá ngay</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu"><i class='bx bx-menu'></i></div>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> <i class='bx bx-chevron-right'></i> <span>Về chúng tôi</span></div>
+    <h1>Về <span class="highlight">BIGSIXX</span></h1>
+    <p>Công ty Cổ phần Logistics BIGSIXX — Hơn 15 năm dẫn đầu ngành vận tải & logistics tại Việt Nam và khu vực</p>
+</section>
+
+<!-- Intro -->
+<section class="section">
+    <div class="container">
+        <div class="about-intro">
+            <div class="reveal-up">
+                <h2 class="section-title" style="text-align:left;">Câu chuyện <span class="highlight">của chúng tôi</span></h2>
+                <p style="color:var(--text-muted);margin-bottom:1.5rem;">Được thành lập năm 2010, BIGSIXX bắt đầu từ một văn phòng nhỏ ở Cát Lái với đội ngũ 6 người và một giấc mơ: xây dựng hệ sinh thái logistics đẳng cấp quốc tế của người Việt.</p>
+                <p style="color:var(--text-muted);margin-bottom:2rem;">Hơn 15 năm sau, chúng tôi tự hào là đối tác chiến lược của hơn 5.000 doanh nghiệp trong và ngoài nước, vận hành hơn 200.000m² kho bãi và kết nối 50+ quốc gia trên toàn cầu.</p>
+                <div style="display:flex;gap:2rem;flex-wrap:wrap;">
+                    <div><div style="font-size:2rem;font-weight:900;color:var(--primary);">2010</div><div style="color:var(--text-muted);font-size:0.9rem;">Năm thành lập</div></div>
+                    <div><div style="font-size:2rem;font-weight:900;color:var(--primary);">1000+</div><div style="color:var(--text-muted);font-size:0.9rem;">Nhân viên</div></div>
+                    <div><div style="font-size:2rem;font-weight:900;color:var(--primary);">50+</div><div style="color:var(--text-muted);font-size:0.9rem;">Quốc gia</div></div>
+                </div>
+            </div>
+            <div class="office-photo reveal-up delay-1">
+                <img src="assets/images/office.png" alt="Văn phòng BIGSIXX">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Vision Values -->
+<section class="section" style="background:var(--bg-darker);">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Tầm nhìn - Sứ mệnh - <span class="highlight">Giá trị</span></h2>
+        </div>
+        <div class="mv-grid">
+            <div class="mv-card glass-card reveal-up">
+                <i class='bx bx-target-lock'></i>
+                <h3>Tầm nhìn</h3>
+                <p>Trở thành tập đoàn logistics hàng đầu Đông Nam Á, tiên phong trong chuyển đổi số và vận tải xanh bền vững vào năm 2030.</p>
+            </div>
+            <div class="mv-card glass-card reveal-up delay-1">
+                <i class='bx bx-diamond'></i>
+                <h3>Sứ mệnh</h3>
+                <p>Tối ưu hóa chuỗi cung ứng toàn cầu, mang lại giá trị gia tăng vượt trội, góp phần nâng cao năng lực cạnh tranh cho doanh nghiệp Việt Nam.</p>
+            </div>
+            <div class="mv-card glass-card reveal-up delay-2">
+                <i class='bx bx-heart'></i>
+                <h3>Giá trị cốt lõi</h3>
+                <p><strong style="color:var(--primary)">Tận tâm</strong> — <strong style="color:var(--primary)">Trách nhiệm</strong> — <strong style="color:var(--primary)">Đổi mới</strong> — <strong style="color:var(--primary)">Tin cậy</strong>. Bốn trụ cột định hướng mọi quyết định của chúng tôi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Revenue & KPIs -->
+<section class="section">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Hiệu quả <span class="highlight">Kinh doanh</span></h2>
+            <p>Các chỉ số tài chính và vận hành nổi bật năm 2025</p>
+        </div>
+        <div class="revenue-grid">
+            <div class="revenue-card glass-card reveal-up" style="border-color:rgba(0,229,255,0.3);">
+                <h3>25.000+ Tỷ</h3>
+                <p>Doanh thu hợp nhất 2025 (VNĐ)</p>
+            </div>
+            <div class="revenue-card glass-card reveal-up delay-1">
+                <h3>10M+</h3>
+                <p>TEU Sản lượng container/năm</p>
+            </div>
+            <div class="revenue-card glass-card reveal-up delay-2">
+                <h3>90%</h3>
+                <p>Thị phần logistics khu vực phía Nam</p>
+            </div>
+            <div class="revenue-card glass-card reveal-up delay-3">
+                <h3>99.2%</h3>
+                <p>Tỷ lệ giao hàng đúng hẹn</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- History Timeline -->
+<section class="section" style="background:var(--bg-darker);">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Lịch sử <span class="highlight">Hình thành</span></h2>
+        </div>
+        <div class="timeline">
+            <div class="tl-item reveal-up">
+                <div class="tl-content glass-card left"><div class="tl-year">2010</div><h4>Thành lập Công ty</h4><p>Ra đời với 6 thành viên sáng lập và văn phòng đầu tiên tại Cát Lái, TP. Thủ Đức.</p></div>
+                <div class="tl-dot"></div>
+                <div></div>
+            </div>
+            <div class="tl-item reveal-up delay-1">
+                <div></div>
+                <div class="tl-dot"></div>
+                <div class="tl-content glass-card right"><div class="tl-year">2015</div><h4>Mở rộng Kho bãi</h4><p>Đưa vào hoạt động 50,000m² kho bãi thông minh đầu tiên tại Bình Dương, đánh dấu bước ngoặt phát triển vượt bậc.</p></div>
+            </div>
+            <div class="tl-item reveal-up delay-2">
+                <div class="tl-content glass-card left"><div class="tl-year">2018</div><h4>Vươn tầm Quốc tế</h4><p>Ký kết hợp tác chiến lược với Maersk, MSC và CMA CGM. Kết nối đường biển tới 50+ quốc gia.</p></div>
+                <div class="tl-dot"></div>
+                <div></div>
+            </div>
+            <div class="tl-item reveal-up delay-1">
+                <div></div>
+                <div class="tl-dot"></div>
+                <div class="tl-content glass-card right"><div class="tl-year">2020</div><h4>Chuyển đổi Số</h4><p>Ra mắt nền tảng e-Port, số hóa toàn bộ quy trình từ đặt lịch, theo dõi hàng đến thanh toán điện tử.</p></div>
+            </div>
+            <div class="tl-item reveal-up delay-2">
+                <div class="tl-content glass-card left" style="border-color:rgba(0,229,255,0.4);"><div class="tl-year" style="color:var(--primary);">2026</div><h4>Logistics Xanh & Net Zero</h4><p>Tiên phong triển khai đội xe điện và năng lượng tái tạo tại kho bãi. Cam kết Net Zero trước năm 2050.</p></div>
+                <div class="tl-dot" style="box-shadow:0 0 20px var(--primary);"></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Shareholders -->
+<section class="section">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Cơ cấu <span class="highlight">Cổ đông</span></h2>
+        </div>
+        <div class="shareholder-grid">
+            <div class="sh-card glass-card reveal-up">
+                <i class='bx bx-buildings'></i>
+                <div class="sh-pct">51%</div>
+                <h4>Tập đoàn Mẹ (Holding)</h4>
+                <p>Nắm giữ cổ phần kiểm soát, định hướng chiến lược phát triển dài hạn.</p>
+            </div>
+            <div class="sh-card glass-card reveal-up delay-1">
+                <i class='bx bx-globe'></i>
+                <div class="sh-pct">30%</div>
+                <h4>Cổ đông Nước ngoài</h4>
+                <p>Các quỹ đầu tư chiến lược từ Singapore, Nhật Bản và Hàn Quốc.</p>
+            </div>
+            <div class="sh-card glass-card reveal-up delay-2">
+                <i class='bx bx-user-check'></i>
+                <div class="sh-pct">19%</div>
+                <h4>Cổ đông & CBCNV</h4>
+                <p>Ban lãnh đạo và cán bộ nhân viên công ty (ESOP) giữ cổ phần.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Awards -->
+<section class="section" style="background:var(--bg-darker);">
+    <div class="container">
+        <div class="section-header reveal-up">
+            <h2 class="section-title">Chứng nhận & <span class="highlight">Giải thưởng</span></h2>
+        </div>
+        <div class="award-grid">
+            <div class="award-card glass-card reveal-up"><i class='bx bx-medal'></i><h4>Top 10 Logistics Việt Nam 2025</h4><p>Vietnam Logistics Business Association</p></div>
+            <div class="award-card glass-card reveal-up delay-1"><i class='bx bx-certification'></i><h4>ISO 9001:2015</h4><p>Hệ thống Quản lý Chất lượng Dịch vụ</p></div>
+            <div class="award-card glass-card reveal-up delay-2"><i class='bx bx-award'></i><h4>Thành viên FIATA</h4><p>Hiệp hội Giao nhận Vận tải Quốc tế</p></div>
+            <div class="award-card glass-card reveal-up delay-3"><i class='bx bx-leaf'></i><h4>Green Logistics 2024</h4><p>Doanh nghiệp Logistics Xanh tiêu biểu</p></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="margin-bottom:1rem;">
+                    <img src="assets/images/logo.svg" alt="BIGSIXX" class="logo-img">
+                    <div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div>
+                </a>
+                <p>Tập đoàn Logistics hàng đầu Việt Nam với hơn 15 năm kinh nghiệm.</p>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-col"><h4>Dịch vụ</h4><ul><li><a href="service-sea.html">Vận tải Đường biển</a></li><li><a href="service-air.html">Vận tải Hàng không</a></li><li><a href="service-road.html">Vận tải Đường bộ</a></li><li><a href="services.html">Kho bãi</a></li></ul></div>
+            <div class="footer-col"><h4>Công ty</h4><ul><li><a href="about.html">Về chúng tôi</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="news.html">Tin tức</a></li><li><a href="careers.html">Tuyển dụng</a></li></ul></div>
+            <div class="footer-col"><h4>Liên hệ</h4>
+                <div class="footer-contact-item"><i class='bx bx-map'></i><span>UMT, Đường 60CL, Cát Lái, TP. Thủ Đức</span></div>
+                <div class="footer-contact-item"><i class='bx bx-phone'></i><span>1900 1234</span></div>
+                <div class="footer-contact-item"><i class='bx bx-envelope'></i><span>contact@bigsixx.com</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 BIGSIXX Logistics. All rights reserved.</p></div>
+    </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>

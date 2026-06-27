@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Vận tải Hàng không - BIGSIXX Logistics</title>
+<link rel="stylesheet" href="shared.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+.air-hero{min-height:60vh;display:flex;align-items:center;position:relative;padding-top:80px;background:linear-gradient(135deg,#0a0015 0%,#001030 100%);}
+.air-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(0,102,255,0.2) 0%,transparent 70%);}
+.air-hero-content{position:relative;z-index:1;padding:4rem 0;}
+.air-hero-icon{font-size:8rem;color:rgba(0,229,255,0.15);position:absolute;right:5%;top:50%;transform:translateY(-50%);}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;}
+.ftr-card{padding:2rem;display:flex;gap:1.2rem;}
+.ftr-card i{font-size:2rem;color:var(--primary);flex-shrink:0;}
+.ftr-card h4{margin-bottom:0.4rem;}
+.ftr-card p{color:var(--text-muted);font-size:0.9rem;}
+.airline-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;}
+.airline-chip{background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:50px;padding:0.6rem 1.5rem;font-weight:600;font-size:0.9rem;color:var(--text-muted);}
+@media(max-width:700px){.feature-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo"><img src="assets/images/logo.svg" class="logo-img"><div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li><li><a href="about.html">Về chúng tôi</a></li>
+      <li class="nav-dropdown"><a href="services.html" class="active">Dịch vụ ▾</a>
+        <div class="dropdown-menu">
+          <a href="service-sea.html"><i class='bx bx-ship'></i> Vận tải Đường biển</a>
+          <a href="service-air.html"><i class='bx bx-plane-alt'></i> Vận tải Hàng không</a>
+          <a href="service-road.html"><i class='bx bx-truck'></i> Vận tải Đường bộ</a>
+        </div>
+      </li>
+      <li><a href="news.html">Tin tức</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="careers.html">Tuyển dụng</a></li><li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+    <div class="nav-actions"><div class="nav-lang"><span class="active">VN</span> | <span class="muted">EN</span></div><a href="contact.html" class="btn btn-primary btn-sm">Báo giá ngay</a></div>
+    <div class="menu-toggle" id="mobile-menu"><i class='bx bx-menu'></i></div>
+  </div>
+</nav>
+
+<section class="air-hero">
+  <i class='bx bx-plane-alt air-hero-icon'></i>
+  <div class="container air-hero-content">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> <i class='bx bx-chevron-right'></i> <a href="services.html">Dịch vụ</a> <i class='bx bx-chevron-right'></i> <span>Vận tải Hàng không</span></div>
+    <span class="badge"><i class='bx bx-plane-alt'></i> Air Freight</span>
+    <h1>Vận tải <span class="highlight">Hàng không</span></h1>
+    <p>Giao hàng hỏa tốc đến 200+ sân bay trên toàn thế giới. Đảm bảo thời gian nghiêm ngặt cho hàng khẩn cấp và có giá trị cao.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary"><i class='bx bx-calculator'></i> Yêu cầu báo giá</a>
+      <a href="contact.html" class="btn btn-outline"><i class='bx bx-phone'></i> Tư vấn ngay</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal-up"><h2 class="section-title">Giải pháp vận tải <span class="highlight">hàng không</span></h2><p>Đa dạng lựa chọn phù hợp với từng loại hàng hóa và mức độ khẩn cấp</p></div>
+    <div class="feature-grid">
+      <div class="ftr-card glass-card reveal-up">
+        <i class='bx bx-fast-forward-circle'></i>
+        <div><h4>Express Air (Hỏa tốc)</h4><p>Giao trong 1-3 ngày. Dành cho hàng khẩn cấp, mẫu thử, linh kiện điện tử cần thời gian nghiêm ngặt.</p></div>
+      </div>
+      <div class="ftr-card glass-card reveal-up delay-1">
+        <i class='bx bx-transfer-alt'></i>
+        <div><h4>Standard Air</h4><p>Giao trong 3-7 ngày. Tối ưu cân bằng giữa chi phí và tốc độ. Phù hợp với hầu hết hàng hóa thương mại.</p></div>
+      </div>
+      <div class="ftr-card glass-card reveal-up">
+        <i class='bx bx-plane'></i>
+        <div><h4>Charter Flight</h4><p>Thuê chuyến bay riêng cho hàng có khối lượng lớn, hàng siêu trường siêu trọng hoặc hàng đặc biệt.</p></div>
+      </div>
+      <div class="ftr-card glass-card reveal-up delay-1">
+        <i class='bx bx-temperature-hot'></i>
+        <div><h4>Hàng lạnh (Cool Chain)</h4><p>Vận chuyển dược phẩm, thực phẩm đông lạnh theo tiêu chuẩn IATA GDP. Giám sát nhiệt độ liên tục.</p></div>
+      </div>
+      <div class="ftr-card glass-card reveal-up">
+        <i class='bx bx-shield-quarter'></i>
+        <div><h4>Hàng nguy hiểm (DG)</h4><p>Xử lý hàng nguy hiểm theo tiêu chuẩn IATA DGR. Đội ngũ được cấp phép và đào tạo chuyên nghiệp.</p></div>
+      </div>
+      <div class="ftr-card glass-card reveal-up delay-1">
+        <i class='bx bx-diamond'></i>
+        <div><h4>Hàng giá trị cao</h4><p>Giải pháp bảo mật đặc biệt cho trang sức, nghệ thuật, thiết bị điện tử cao cấp với đội bảo vệ riêng.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-darker);">
+  <div class="container">
+    <div class="section-header reveal-up"><h2 class="section-title">Hãng hàng không <span class="highlight">đối tác</span></h2></div>
+    <div class="airline-grid reveal-up">
+      <span class="airline-chip">Vietnam Airlines</span>
+      <span class="airline-chip">Singapore Airlines Cargo</span>
+      <span class="airline-chip">Cathay Pacific Cargo</span>
+      <span class="airline-chip">Korean Air Cargo</span>
+      <span class="airline-chip">Emirates SkyCargo</span>
+      <span class="airline-chip">FedEx</span>
+      <span class="airline-chip">DHL Express</span>
+      <span class="airline-chip">UPS Airlines</span>
+    </div>
+    <div style="text-align:center;margin-top:3rem;" class="reveal-up">
+      <a href="contact.html" class="btn btn-primary"><i class='bx bx-calculator'></i> Nhận báo giá hàng không ngay</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about"><a href="index.html" class="logo" style="margin-bottom:1rem;"><img src="assets/images/logo.svg" class="logo-img"><div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div></a><p>Tập đoàn Logistics hàng đầu Việt Nam.</p><div class="social-links"><a href="#"><i class='bx bxl-facebook'></i></a><a href="#"><i class='bx bxl-linkedin'></i></a><a href="#"><i class='bx bxl-youtube'></i></a></div></div>
+      <div class="footer-col"><h4>Dịch vụ</h4><ul><li><a href="service-sea.html">Vận tải Đường biển</a></li><li><a href="service-air.html">Vận tải Hàng không</a></li><li><a href="service-road.html">Vận tải Đường bộ</a></li></ul></div>
+      <div class="footer-col"><h4>Công ty</h4><ul><li><a href="about.html">Về chúng tôi</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="careers.html">Tuyển dụng</a></li></ul></div>
+      <div class="footer-col"><h4>Liên hệ</h4><div class="footer-contact-item"><i class='bx bx-map'></i><span>UMT, Cát Lái, TP. Thủ Đức</span></div><div class="footer-contact-item"><i class='bx bx-phone'></i><span>1900 1234</span></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 BIGSIXX Logistics. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

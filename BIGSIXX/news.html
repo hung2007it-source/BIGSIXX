@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Tin tức - BIGSIXX Logistics</title>
+<link rel="stylesheet" href="shared.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+.news-layout{display:grid;grid-template-columns:2fr 1fr;gap:3rem;}
+.news-list{display:flex;flex-direction:column;gap:2rem;}
+.news-item{display:flex;gap:1.5rem;padding:1.5rem;cursor:pointer;transition:var(--transition);}
+.news-item:hover{border-color:var(--primary);transform:translateX(4px);}
+.news-thumb{width:160px;height:110px;border-radius:10px;object-fit:cover;flex-shrink:0;background:var(--glass-bg);}
+.news-thumb-placeholder{width:160px;height:110px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem;}
+.news-meta{display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem;}
+.news-meta .date{color:var(--text-muted);font-size:0.83rem;display:flex;align-items:center;gap:0.3rem;}
+.news-item h3{font-size:1.05rem;margin-bottom:0.5rem;line-height:1.5;}
+.news-item p{color:var(--text-muted);font-size:0.88rem;}
+.sidebar{display:flex;flex-direction:column;gap:2rem;}
+.sidebar-card{padding:1.5rem;}
+.sidebar-card h4{margin-bottom:1rem;font-size:1rem;color:var(--primary);}
+.recent-list{display:flex;flex-direction:column;gap:0.8rem;}
+.recent-item{display:flex;gap:0.8rem;font-size:0.85rem;color:var(--text-muted);cursor:pointer;transition:var(--transition);}
+.recent-item:hover{color:var(--primary);}
+.cat-list{display:flex;flex-direction:column;gap:0.5rem;}
+.cat-item{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid var(--glass-border);font-size:0.9rem;color:var(--text-muted);cursor:pointer;transition:var(--transition);}
+.cat-item:hover{color:var(--primary);}
+.cat-item span{background:rgba(0,229,255,0.1);border-radius:50px;padding:0.1rem 0.5rem;font-size:0.8rem;color:var(--primary);}
+@media(max-width:900px){.news-layout{grid-template-columns:1fr;}.news-thumb,.news-thumb-placeholder{width:100px;height:80px;}}
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo"><img src="assets/images/logo.svg" class="logo-img"><div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li><li><a href="about.html">Về chúng tôi</a></li>
+      <li class="nav-dropdown"><a href="services.html">Dịch vụ ▾</a>
+        <div class="dropdown-menu">
+          <a href="service-sea.html"><i class='bx bx-ship'></i> Vận tải Đường biển</a>
+          <a href="service-air.html"><i class='bx bx-plane-alt'></i> Vận tải Hàng không</a>
+          <a href="service-road.html"><i class='bx bx-truck'></i> Vận tải Đường bộ</a>
+        </div>
+      </li>
+      <li><a href="news.html" class="active">Tin tức</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="careers.html">Tuyển dụng</a></li><li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+    <div class="nav-actions"><div class="nav-lang"><span class="active">VN</span> | <span class="muted">EN</span></div><a href="contact.html" class="btn btn-primary btn-sm">Báo giá ngay</a></div>
+    <div class="menu-toggle" id="mobile-menu"><i class='bx bx-menu'></i></div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Trang chủ</a> <i class='bx bx-chevron-right'></i> <span>Tin tức & Sự kiện</span></div>
+  <h1>Tin tức & <span class="highlight">Sự kiện</span></h1>
+  <p>Cập nhật thông tin mới nhất về BIGSIXX và thị trường Logistics Việt Nam</p>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="news-layout">
+      <div class="news-list">
+        <div class="news-item glass-card reveal-up">
+          <div class="news-thumb-placeholder" style="background:rgba(0,229,255,0.1);color:var(--primary)"><i class='bx bx-buildings'></i></div>
+          <div>
+            <div class="news-meta"><span class="badge">Hoạt động công ty</span><span class="date"><i class='bx bx-calendar'></i> 15/06/2026</span></div>
+            <h3>BIGSIXX chính thức khai trương Trung tâm Logistics thông minh tại Bình Dương</h3>
+            <p>Sau 18 tháng xây dựng, Trung tâm Logistics Thông minh đầu tiên của BIGSIXX tại KCN Mỹ Phước 3 chính thức đi vào hoạt động với diện tích 50,000m², ứng dụng robot AGV và hệ thống WMS tích hợp AI...</p>
+          </div>
+        </div>
+        <div class="news-item glass-card reveal-up delay-1">
+          <div class="news-thumb-placeholder" style="background:rgba(0,200,100,0.1);color:#2ed573;"><i class='bx bx-leaf'></i></div>
+          <div>
+            <div class="news-meta"><span class="badge">Logistics Xanh</span><span class="date"><i class='bx bx-calendar'></i> 08/06/2026</span></div>
+            <h3>Cam kết Net Zero 2050: BIGSIXX triển khai đội xe điện đầu tiên tại TP.HCM</h3>
+            <p>50 xe tải điện mang thương hiệu BIGSIXX chính thức lăn bánh trên các tuyến nội đô TP.HCM. Đây là bước đầu trong lộ trình điện hóa toàn bộ đội xe vào năm 2035...</p>
+          </div>
+        </div>
+        <div class="news-item glass-card reveal-up">
+          <div class="news-thumb-placeholder" style="background:rgba(100,0,255,0.1);color:#a78bfa;"><i class='bx bx-bar-chart-square'></i></div>
+          <div>
+            <div class="news-meta"><span class="badge">Thị trường</span><span class="date"><i class='bx bx-calendar'></i> 01/06/2026</span></div>
+            <h3>Báo cáo triển vọng ngành Logistics Việt Nam Quý 3/2026</h3>
+            <p>Theo báo cáo từ VLA, ngành logistics Việt Nam dự kiến tăng trưởng 15-17% trong Q3/2026, được thúc đẩy bởi sự phục hồi mạnh mẽ của xuất khẩu dệt may và điện tử...</p>
+          </div>
+        </div>
+        <div class="news-item glass-card reveal-up delay-1">
+          <div class="news-thumb-placeholder" style="background:rgba(255,100,0,0.1);color:#ff6b35;"><i class='bx bx-handshake'></i></div>
+          <div>
+            <div class="news-meta"><span class="badge">Hợp tác</span><span class="date"><i class='bx bx-calendar'></i> 20/05/2026</span></div>
+            <h3>BIGSIXX ký kết hợp tác chiến lược với Tập đoàn Mitsui (Nhật Bản)</h3>
+            <p>Lễ ký kết hợp tác toàn diện giữa BIGSIXX và Mitsui & Co. Ltd diễn ra tại Tokyo. Thỏa thuận bao gồm đầu tư mở rộng hệ thống kho bãi và phát triển tuyến vận tải lạnh Japan-Vietnam...</p>
+          </div>
+        </div>
+        <div class="news-item glass-card reveal-up">
+          <div class="news-thumb-placeholder" style="background:rgba(0,200,255,0.1);color:var(--primary);"><i class='bx bx-medal'></i></div>
+          <div>
+            <div class="news-meta"><span class="badge">Giải thưởng</span><span class="date"><i class='bx bx-calendar'></i> 05/05/2026</span></div>
+            <h3>BIGSIXX đạt giải "Doanh nghiệp Logistics Xuất sắc" tại Vietnam Logistics Awards 2026</h3>
+            <p>Tại lễ trao giải thường niên của Hiệp hội Doanh nghiệp Dịch vụ Logistics Việt Nam (VLA), BIGSIXX vinh dự nhận giải thưởng cao nhất hạng mục Doanh nghiệp Logistics Xuất sắc...</p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-card glass-card reveal-up">
+          <h4><i class='bx bx-time'></i> Tin tức mới nhất</h4>
+          <div class="recent-list">
+            <div class="recent-item"><i class='bx bx-right-arrow-alt'></i><span>BIGSIXX mở rộng dịch vụ e-Port sang Campuchia</span></div>
+            <div class="recent-item"><i class='bx bx-right-arrow-alt'></i><span>Hướng dẫn khai báo hải quan điện tử VNACCS 2026</span></div>
+            <div class="recent-item"><i class='bx bx-right-arrow-alt'></i><span>Top 5 xu hướng logistics bền vững tại Việt Nam</span></div>
+            <div class="recent-item"><i class='bx bx-right-arrow-alt'></i><span>BIGSIXX tham dự Trans-Pacific Logistics Summit 2026</span></div>
+          </div>
+        </div>
+        <div class="sidebar-card glass-card reveal-up delay-1">
+          <h4><i class='bx bx-category'></i> Chuyên mục</h4>
+          <div class="cat-list">
+            <div class="cat-item">Hoạt động công ty <span>8</span></div>
+            <div class="cat-item">Logistics Xanh <span>5</span></div>
+            <div class="cat-item">Thị trường <span>12</span></div>
+            <div class="cat-item">Hợp tác & Đối tác <span>6</span></div>
+            <div class="cat-item">Giải thưởng <span>4</span></div>
+            <div class="cat-item">Tuyển dụng <span>9</span></div>
+          </div>
+        </div>
+        <div class="sidebar-card glass-card reveal-up delay-2" style="text-align:center;">
+          <i class='bx bx-envelope' style="font-size:2.5rem;color:var(--primary);margin-bottom:0.8rem;"></i>
+          <h4>Đăng ký nhận bản tin</h4>
+          <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:1rem;">Nhận tin tức logistics mới nhất qua email mỗi tuần</p>
+          <input type="email" placeholder="Email của bạn..." style="width:100%;padding:0.7rem;border-radius:8px;border:1px solid var(--glass-border);background:rgba(255,255,255,0.05);color:#fff;outline:none;margin-bottom:0.8rem;font-family:inherit;">
+          <button class="btn btn-primary" style="width:100%;justify-content:center;">Đăng ký</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about"><a href="index.html" class="logo" style="margin-bottom:1rem;"><img src="assets/images/logo.svg" class="logo-img"><div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div></a><p>Tập đoàn Logistics hàng đầu Việt Nam.</p><div class="social-links"><a href="#"><i class='bx bxl-facebook'></i></a><a href="#"><i class='bx bxl-linkedin'></i></a><a href="#"><i class='bx bxl-youtube'></i></a></div></div>
+      <div class="footer-col"><h4>Dịch vụ</h4><ul><li><a href="service-sea.html">Vận tải Đường biển</a></li><li><a href="service-air.html">Vận tải Hàng không</a></li><li><a href="service-road.html">Vận tải Đường bộ</a></li></ul></div>
+      <div class="footer-col"><h4>Công ty</h4><ul><li><a href="about.html">Về chúng tôi</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="careers.html">Tuyển dụng</a></li></ul></div>
+      <div class="footer-col"><h4>Liên hệ</h4><div class="footer-contact-item"><i class='bx bx-map'></i><span>UMT, Cát Lái, TP. Thủ Đức</span></div><div class="footer-contact-item"><i class='bx bx-phone'></i><span>1900 1234</span></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 BIGSIXX Logistics. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

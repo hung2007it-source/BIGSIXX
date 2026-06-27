@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Vận tải Đường biển - BIGSIXX Logistics</title>
+<link rel="stylesheet" href="shared.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+.svc-hero{min-height:60vh;display:flex;align-items:center;position:relative;padding-top:80px;}
+.svc-hero-bg{position:absolute;inset:0;background:url('assets/images/hero_port.png') center/cover;filter:brightness(0.3);z-index:0;}
+.svc-hero-content{position:relative;z-index:1;padding:4rem 0;}
+.svc-hero-content .badge{margin-bottom:1.5rem;}
+.svc-hero-content h1{font-size:clamp(2.5rem,5vw,4rem);font-weight:900;margin-bottom:1rem;}
+.svc-hero-content p{font-size:1.1rem;color:var(--text-muted);max-width:600px;margin-bottom:2rem;}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;}
+.detail-img{border-radius:20px;overflow:hidden;border:1px solid var(--glass-border);}
+.detail-img img{width:100%;height:350px;object-fit:cover;}
+.feature-list{display:flex;flex-direction:column;gap:1rem;}
+.feature-item{display:flex;gap:1rem;padding:1.2rem;background:var(--glass-bg);border:1px solid var(--glass-border);border-radius:12px;}
+.feature-item i{font-size:1.8rem;color:var(--primary);flex-shrink:0;}
+.feature-item h4{font-size:1rem;margin-bottom:0.3rem;}
+.feature-item p{color:var(--text-muted);font-size:0.88rem;}
+.route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.route-card{padding:1.5rem;text-align:center;}
+.route-card i{font-size:2rem;color:var(--secondary);margin-bottom:0.8rem;}
+.route-card h4{margin-bottom:0.4rem;}
+.route-card p{color:var(--text-muted);font-size:0.85rem;}
+.price-note{background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.2);border-radius:12px;padding:2rem;text-align:center;margin-top:3rem;}
+@media(max-width:900px){.detail-grid{grid-template-columns:1fr;}.route-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo"><img src="assets/images/logo.svg" class="logo-img"><div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Trang chủ</a></li><li><a href="about.html">Về chúng tôi</a></li>
+      <li class="nav-dropdown"><a href="services.html" class="active">Dịch vụ ▾</a>
+        <div class="dropdown-menu">
+          <a href="service-sea.html"><i class='bx bx-ship'></i> Vận tải Đường biển</a>
+          <a href="service-air.html"><i class='bx bx-plane-alt'></i> Vận tải Hàng không</a>
+          <a href="service-road.html"><i class='bx bx-truck'></i> Vận tải Đường bộ</a>
+        </div>
+      </li>
+      <li><a href="news.html">Tin tức</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="careers.html">Tuyển dụng</a></li><li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+    <div class="nav-actions"><div class="nav-lang"><span class="active">VN</span> | <span class="muted">EN</span></div><a href="contact.html" class="btn btn-primary btn-sm">Báo giá ngay</a></div>
+    <div class="menu-toggle" id="mobile-menu"><i class='bx bx-menu'></i></div>
+  </div>
+</nav>
+
+<section class="svc-hero">
+  <div class="svc-hero-bg"></div>
+  <div class="container svc-hero-content">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> <i class='bx bx-chevron-right'></i> <a href="services.html">Dịch vụ</a> <i class='bx bx-chevron-right'></i> <span>Vận tải Đường biển</span></div>
+    <span class="badge"><i class='bx bx-ship'></i> Ocean Freight</span>
+    <h1>Vận tải <span class="highlight">Đường biển</span></h1>
+    <p>Kết nối 50+ quốc gia với chi phí tối ưu. Đối tác chiến lược của Maersk, MSC, CMA CGM và các hãng tàu lớn toàn cầu.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary"><i class='bx bx-calculator'></i> Yêu cầu báo giá</a>
+      <a href="contact.html" class="btn btn-outline"><i class='bx bx-phone'></i> Tư vấn ngay</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="detail-grid">
+      <div class="reveal-up">
+        <h2 class="section-title" style="text-align:left;font-size:2rem;">Tại sao chọn vận tải <span class="highlight">đường biển?</span></h2>
+        <p style="color:var(--text-muted);margin-bottom:2rem;">Phương thức vận tải tiết kiệm nhất cho hàng hóa có khối lượng lớn, không yêu cầu giao hàng hỏa tốc. Phù hợp với 80% nhu cầu xuất nhập khẩu của doanh nghiệp.</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <i class='bx bx-package'></i>
+            <div><h4>FCL — Full Container Load</h4><p>Thuê nguyên container 20', 40', 40'HC cho hàng số lượng lớn. Đảm bảo an toàn và chi phí thấp nhất.</p></div>
+          </div>
+          <div class="feature-item">
+            <i class='bx bx-grid-alt'></i>
+            <div><h4>LCL — Less than Container Load</h4><p>Gom hàng lẻ (consolidation) lý tưởng cho lô hàng nhỏ. Chia sẻ chi phí vận chuyển cùng các chủ hàng khác.</p></div>
+          </div>
+          <div class="feature-item">
+            <i class='bx bx-time'></i>
+            <div><h4>Transit Time linh hoạt</h4><p>Nhiều lịch tàu hàng tuần. Hỗ trợ tuyến nhanh (Express) hoặc tuyến tiết kiệm theo nhu cầu khách hàng.</p></div>
+          </div>
+          <div class="feature-item">
+            <i class='bx bx-file'></i>
+            <div><h4>Trọn gói chứng từ</h4><p>Bill of Lading, Packing List, Invoice, C/O, kiểm tra chất lượng, kiểm dịch — xử lý hoàn toàn bởi BIGSIXX.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-img reveal-up delay-1">
+        <img src="assets/images/hero_port.png" alt="Cảng BIGSIXX">
+        <div class="price-note">
+          <i class='bx bx-info-circle' style="font-size:2rem;color:var(--primary);margin-bottom:0.5rem;"></i>
+          <h4>Cần báo giá vận tải biển?</h4>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin:0.5rem 0 1rem;">Cung cấp thông tin hàng hóa — chúng tôi sẽ gửi báo giá tốt nhất trong vòng 2 giờ làm việc.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm">Yêu cầu báo giá miễn phí</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-darker);">
+  <div class="container">
+    <div class="section-header reveal-up"><h2 class="section-title">Tuyến hàng <span class="highlight">chủ lực</span></h2></div>
+    <div class="route-grid">
+      <div class="route-card glass-card reveal-up"><i class='bx bx-globe'></i><h4>Việt Nam → Châu Âu</h4><p>Transit ~28-32 ngày. Qua cảng Rotterdam, Hamburg, Antwerp.</p></div>
+      <div class="route-card glass-card reveal-up delay-1"><i class='bx bx-globe'></i><h4>Việt Nam → Bắc Mỹ</h4><p>Transit ~18-25 ngày. Cảng Los Angeles, Long Beach, New York.</p></div>
+      <div class="route-card glass-card reveal-up delay-2"><i class='bx bx-globe'></i><h4>Nội Á</h4><p>Transit ~7-15 ngày. Trung Quốc, Nhật Bản, Hàn Quốc, Singapore.</p></div>
+      <div class="route-card glass-card reveal-up"><i class='bx bx-globe'></i><h4>Đông Nam Á</h4><p>Transit ~3-7 ngày. Thailand, Malaysia, Indonesia, Philippines.</p></div>
+      <div class="route-card glass-card reveal-up delay-1"><i class='bx bx-globe'></i><h4>Trung Đông & Ấn Độ</h4><p>Transit ~18-22 ngày. Dubai, Jeddah, Mumbai, Chennai.</p></div>
+      <div class="route-card glass-card reveal-up delay-2"><i class='bx bx-globe'></i><h4>Châu Phi & Mỹ Latin</h4><p>Transit ~30-45 ngày. Kết nối qua hub Singapore/Hong Kong.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about"><a href="index.html" class="logo" style="margin-bottom:1rem;"><img src="assets/images/logo.svg" class="logo-img"><div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div></a><p>Tập đoàn Logistics hàng đầu Việt Nam.</p><div class="social-links"><a href="#"><i class='bx bxl-facebook'></i></a><a href="#"><i class='bx bxl-linkedin'></i></a><a href="#"><i class='bx bxl-youtube'></i></a></div></div>
+      <div class="footer-col"><h4>Dịch vụ</h4><ul><li><a href="service-sea.html">Vận tải Đường biển</a></li><li><a href="service-air.html">Vận tải Hàng không</a></li><li><a href="service-road.html">Vận tải Đường bộ</a></li><li><a href="services.html">Kho bãi</a></li></ul></div>
+      <div class="footer-col"><h4>Công ty</h4><ul><li><a href="about.html">Về chúng tôi</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="news.html">Tin tức</a></li><li><a href="careers.html">Tuyển dụng</a></li></ul></div>
+      <div class="footer-col"><h4>Liên hệ</h4><div class="footer-contact-item"><i class='bx bx-map'></i><span>UMT, Cát Lái, TP. Thủ Đức</span></div><div class="footer-contact-item"><i class='bx bx-phone'></i><span>1900 1234</span></div><div class="footer-contact-item"><i class='bx bx-envelope'></i><span>contact@bigsixx.com</span></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 BIGSIXX Logistics. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

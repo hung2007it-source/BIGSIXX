@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Đội ngũ - BIGSIXX Logistics</title>
+<link rel="stylesheet" href="shared.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+.team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+.team-card {
+    padding: 2.5rem 2rem; text-align: center;
+    cursor: pointer; transition: var(--transition);
+}
+.team-card:hover { border-color: var(--primary); transform: translateY(-6px); }
+.team-avatar {
+    width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1.5rem;
+    border: 3px solid var(--primary); overflow: hidden;
+    background: linear-gradient(135deg,rgba(0,229,255,0.2),rgba(0,102,255,0.2));
+    box-shadow: 0 0 20px rgba(0,229,255,0.3);
+}
+.team-avatar img { width:100%; height:100%; object-fit:cover; }
+.team-card h3 { font-size: 1.2rem; margin-bottom: 0.3rem; }
+.team-card .role { color: var(--primary); font-size: 0.9rem; font-weight: 600; margin-bottom: 0.8rem; }
+.team-card .dept { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem; }
+.team-card .desc { color: var(--text-muted); font-size: 0.88rem; line-height: 1.7; }
+.view-cv-btn { margin-top: 1.2rem; }
+.team-hint { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-bottom: 3rem; }
+.team-hint i { color: var(--primary); }
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.team-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo.svg" alt="BIGSIXX Logo" class="logo-img">
+            <div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li class="nav-dropdown"><a href="services.html">Dịch vụ ▾</a>
+                <div class="dropdown-menu">
+                    <a href="service-sea.html"><i class='bx bx-ship'></i> Vận tải Đường biển</a>
+                    <a href="service-air.html"><i class='bx bx-plane-alt'></i> Vận tải Hàng không</a>
+                    <a href="service-road.html"><i class='bx bx-truck'></i> Vận tải Đường bộ</a>
+                </div>
+            </li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="team.html" class="active">Đội ngũ</a></li>
+            <li><a href="careers.html">Tuyển dụng</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="nav-lang"><span class="active">VN</span> | <span class="muted">EN</span></div>
+            <a href="contact.html" class="btn btn-primary btn-sm">Báo giá ngay</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu"><i class='bx bx-menu'></i></div>
+    </div>
+</nav>
+
+<section class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> <i class='bx bx-chevron-right'></i> <span>Đội ngũ</span></div>
+    <h1>Đội ngũ <span class="highlight">Lãnh đạo</span></h1>
+    <p>Những con người tài năng và tâm huyết đứng sau sự thành công của BIGSIXX Logistics</p>
+</section>
+
+<section class="section">
+    <div class="container">
+        <p class="team-hint reveal-up"><i class='bx bx-mouse'></i> Bấm vào thẻ thành viên để xem hồ sơ năng lực đầy đủ</p>
+        <div class="team-grid">
+
+            <div class="team-card glass-card reveal-up" onclick="openCV('assets/images/team/image6.png','Hồ Minh Khôi')">
+                <div class="team-avatar"><img src="assets/images/team/avatar_image6.png" alt="Hồ Minh Khôi"></div>
+                <h3>Hồ Minh Khôi</h3>
+                <div class="role">Trưởng phòng Nhân sự</div>
+                <div class="dept"><i class='bx bx-briefcase'></i> HR Manager</div>
+                <div class="desc">Phụ trách khai mạc, giới thiệu ban tuyển dụng. Đặt các câu hỏi cơ bản: giới thiệu bản thân, động lực, tìm hiểu công ty.</div>
+                <button class="btn btn-outline btn-sm view-cv-btn"><i class='bx bx-file'></i> Xem hồ sơ</button>
+            </div>
+
+            <div class="team-card glass-card reveal-up delay-1" onclick="openCV('assets/images/team/image4.jpg','Trịnh Thanh Phong')">
+                <div class="team-avatar"><img src="assets/images/team/avatar_image4.jpg" alt="Trịnh Thanh Phong"></div>
+                <h3>Trịnh Thanh Phong</h3>
+                <div class="role">Thư ký / Quan sát viên</div>
+                <div class="dept"><i class='bx bx-pencil'></i> Secretary</div>
+                <div class="desc">Phụ trách tổng kết, vấn đáp. Quản lý thời gian, theo dõi tiến trình và tổng hợp đánh giá sau buổi phỏng vấn.</div>
+                <button class="btn btn-outline btn-sm view-cv-btn"><i class='bx bx-file'></i> Xem hồ sơ</button>
+            </div>
+
+            <div class="team-card glass-card reveal-up delay-2" onclick="openCV('assets/images/team/image9.png','Nguyễn Anh Pháp')">
+                <div class="team-avatar"><img src="assets/images/team/avatar_image9.png" alt="Nguyễn Anh Pháp"></div>
+                <h3>Nguyễn Anh Pháp</h3>
+                <div class="role">Phó phòng Kinh doanh</div>
+                <div class="dept"><i class='bx bx-trending-up'></i> Sales Supervisor</div>
+                <div class="desc">Phụ trách thảo luận nội bộ, chấm điểm. Đặt câu hỏi về điểm mạnh, kỹ năng bán hàng và chốt hợp đồng.</div>
+                <button class="btn btn-outline btn-sm view-cv-btn"><i class='bx bx-file'></i> Xem hồ sơ</button>
+            </div>
+
+            <div class="team-card glass-card reveal-up" onclick="openCV('assets/images/team/image8.png','Đỗ Gia Bảo')">
+                <div class="team-avatar"><img src="assets/images/team/avatar_image8.png" alt="Đỗ Gia Bảo"></div>
+                <h3>Đỗ Gia Bảo</h3>
+                <div class="role">Nhân viên Nhân sự</div>
+                <div class="dept"><i class='bx bx-user'></i> HR Staff</div>
+                <div class="desc">Phụ trách thảo luận nội bộ, chấm điểm. Hỗ trợ ghi chép và đặt câu hỏi phụ để làm rõ thêm câu trả lời.</div>
+                <button class="btn btn-outline btn-sm view-cv-btn"><i class='bx bx-file'></i> Xem hồ sơ</button>
+            </div>
+
+            <div class="team-card glass-card reveal-up delay-1" onclick="openCV('assets/images/team/image7.png','Đặng Thành Công')">
+                <div class="team-avatar"><img src="assets/images/team/avatar_image7.png" alt="Đặng Thành Công"></div>
+                <h3>Đặng Thành Công</h3>
+                <div class="role">Trưởng phòng Logistics</div>
+                <div class="dept"><i class='bx bx-package'></i> Logistics Manager</div>
+                <div class="desc">Phụ trách phỏng vấn chuyên sâu. Đặt câu hỏi về quy trình XNK, phối hợp hải quan và báo giá dịch vụ.</div>
+                <button class="btn btn-outline btn-sm view-cv-btn"><i class='bx bx-file'></i> Xem hồ sơ</button>
+            </div>
+
+            <div class="team-card glass-card reveal-up delay-2" onclick="openCV('assets/images/team/image5.png','Đặng Gia Hưng')">
+                <div class="team-avatar"><img src="assets/images/team/avatar_image5.png" alt="Đặng Gia Hưng"></div>
+                <h3>Đặng Gia Hưng</h3>
+                <div class="role">Trưởng phòng CSKH</div>
+                <div class="dept"><i class='bx bx-headphone'></i> CSKH Manager</div>
+                <div class="desc">Phụ trách phỏng vấn và công bố kết quả. Đặt câu hỏi về ứng xử khách hàng và xử lý tình huống khó.</div>
+                <button class="btn btn-outline btn-sm view-cv-btn"><i class='bx bx-file'></i> Xem hồ sơ</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CV Modal -->
+<div id="cvModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="modalName"></h3>
+            <span class="close-modal" onclick="closeCV()">&times;</span>
+        </div>
+        <div class="cv-img-container">
+            <img id="modalImg" src="" alt="CV">
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="margin-bottom:1rem;">
+                    <img src="assets/images/logo.svg" alt="BIGSIXX" class="logo-img">
+                    <div class="logo-text"><div class="logo-name">BIGSIX<span>X</span></div><div class="logo-sub">Global Logistics Solutions</div></div>
+                </a>
+                <p>Tập đoàn Logistics hàng đầu Việt Nam.</p>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-col"><h4>Dịch vụ</h4><ul><li><a href="service-sea.html">Vận tải Đường biển</a></li><li><a href="service-air.html">Vận tải Hàng không</a></li><li><a href="service-road.html">Vận tải Đường bộ</a></li></ul></div>
+            <div class="footer-col"><h4>Công ty</h4><ul><li><a href="about.html">Về chúng tôi</a></li><li><a href="team.html">Đội ngũ</a></li><li><a href="careers.html">Tuyển dụng</a></li><li><a href="contact.html">Liên hệ</a></li></ul></div>
+            <div class="footer-col"><h4>Liên hệ</h4>
+                <div class="footer-contact-item"><i class='bx bx-map'></i><span>UMT, Cát Lái, TP. Thủ Đức</span></div>
+                <div class="footer-contact-item"><i class='bx bx-phone'></i><span>1900 1234</span></div>
+                <div class="footer-contact-item"><i class='bx bx-envelope'></i><span>contact@bigsixx.com</span></div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 BIGSIXX Logistics. All rights reserved.</p></div>
+    </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
